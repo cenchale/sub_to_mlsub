@@ -18,3 +18,10 @@ pip install -r requirements.txt
 后台运行 nohup python3 -u main.py 
 结束    ps -ef|grep main.py    kill -9  15656(对应的id号)
  
+以上是原作者的教程，以下是我的在操作过程中的一些补充：
+main.py和requirements.txt两个下载好后放到上面Python-3.7.0 目录下，修改main.py里边的ip为对应内网机子的ip地址
+经我这边自己测试Ubuntu20.04 lts server版不需要安装zlib-devel至make的一串软件，安装完python3足以
+之后正常执行
+
+4.22更新
+docker下可执行，使用原版python3镜像，直接从安装pip3，就可以正常执行了
